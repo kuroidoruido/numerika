@@ -4,12 +4,16 @@ use structopt::StructOpt;
 mod calculation;
 
 #[derive(Debug, StructOpt)]
-#[structopt(name = "numerika", about = "Execute a calculation.", long_about = r#"
+#[structopt(
+    name = "numerika",
+    about = "Execute a calculation.",
+    long_about = r#"
 ♪♫ We're all living in Numerika
 Numerika ist wunderbar
 We're all living in Numerika
 Numerika, Numerika ♬
-"#)]
+"#
+)]
 struct NumerikaOpt {
     // The number of occurrences of the `v/verbose` flag
     /// Verbose mode (-v, -vv, -vvv, etc.)
